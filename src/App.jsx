@@ -11,26 +11,26 @@ import RegisterPage from "./components/views/RegisterPage/RegisterPage";
 import Timepass from "./Timepass";
 import Banner4 from "./components/views/Banner4/Banner4";
 import MyButton from './components/views/MyButton/MyButton'
-import {productData} from './Constdata/mockdata'
+import { productData } from './Constdata/mockdata'
 const App = () => (
   <div >
     <Header />
     <Navbar />
 
-   {/* <Banner4>
+    {/* <Banner4>
     <button>Shop Now</button>
    </Banner4> */}
     {/* <ProductCard /> */}
     {/* <LoginPage />  */}
-    {/* <RegisterPage />
-    {/* <Hero/> */}
+    {/* <RegisterPage />*/}
+    <Hero />
     {/* <Banner4>{<Text variant='text-lg'>Shop Now</Text>}
     {<button>Hurry</button>}</Banner4> */}
-    {productData.map((x,id)=>{
-      return(<>
-      
-      <Banner4 {...x}>
-      </Banner4>
+    {productData.map((x, id) => {
+      return (<>
+
+        <Banner4 {...x}>
+        </Banner4>
       </>)
     })}
 
