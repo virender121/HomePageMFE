@@ -1,4 +1,4 @@
-
+/* 
 .container {
   display: flex;
   border: 2px solid black;
@@ -8,7 +8,10 @@
   height: 6.06rem;
 }
 .searchBar_div {
-  color:blue;
+  color:blue; 
+  display: flex;
+justify-content: space-around;
+gap:2rem;
 
 }
 .Input{
@@ -19,8 +22,13 @@
   border-radius: 5px;
 }
 
-.icon_container {
+.icons{
+  display: flex;
+ gap:1rem;
+ border:2px solid red;
+}
+/* .icon_container {
   display: flex;
   justify-content: space-between;
   background-color: black;
-}
+} */ */

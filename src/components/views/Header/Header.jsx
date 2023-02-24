@@ -5,6 +5,7 @@ import classes from "./Header.module.css";
 import { BsCart3 } from "react-icons/bs";
 import { BsHeart } from "react-icons/bs";
 import { VscAccount } from "react-icons/vsc";
+import Text from "../Text/Text.jsx";
 
 /**
  * Impliments Header component
@@ -19,13 +20,14 @@ export const Header = (props) => {
     <div className={classes.container}>
       <div className={classes.searchBar_div}>
         <MyInput placeholder="Search for item" className={classes.input} />
-        <VscAccount />
+       <div className={classes.icons}> <VscAccount style={{fontSize:'30px'}} />  <Text variant="text-sm">Account</Text>
 
-        <BsHeart />
+        <BsHeart style={{fontSize:'30px'}} />  <Text variant="text-sm">Like</Text>
 
-        <BsCart3 />
+        <BsCart3 style={{fontSize:'30px'}} /> <Text variant="text-sm">Cart</Text>
+        </div>
       </div>
-      <div className={classes.iconcontainer}></div>
+    
 
       <image src="" />
     </div>

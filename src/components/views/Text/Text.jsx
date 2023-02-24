@@ -33,7 +33,7 @@ export const Text = (props) => {
  */
 
 export const propTypes = {
-  variant: PropTypes.oneOf(["text-xs", "text-small"]),
+  variant: PropTypes.oneOf(["text-xs", "text-sm"]),
  
 };
 
