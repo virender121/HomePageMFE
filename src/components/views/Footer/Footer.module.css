@@ -2,7 +2,6 @@
     width: 100%;
     padding-block: 1.5rem;
     position: relative;
-
 }
 .footer_box{
     width: 80%;
@@ -37,10 +36,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 2rem;
-    background-color: rgb(43, 226, 156);
-    color: rgb(46, 42, 165);
+    background-color: #46BCF2;
+    color: #5B9D;
     border-radius: 5rem;
     margin-top: 3rem;
+    height: 3rem;
 }
 .subcribe_box input{
     background-color: transparent;
