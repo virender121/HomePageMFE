@@ -46,7 +46,7 @@ export const Footer = (props) => {
           </div>
         </div>
         <div className={classes.footer_box_discover_menu}>
-          <h3>Discover</h3>
+          <h3>Company</h3>
           <ul className={classes.list}>
             <li>About Us</li>
             <li>About Us</li>
@@ -55,7 +55,7 @@ export const Footer = (props) => {
           </ul>
         </div>
         <div className={classes.footer_box_help}>
-          <h3>Help Center</h3>
+          <h3>Account</h3>
           <ul className={classes.list}>
             <li>About Us</li>
             <li>About Us</li>
@@ -64,7 +64,7 @@ export const Footer = (props) => {
           </ul>
         </div>
         <div className={classes.footer_box_help}>
-          <h3>Career</h3>
+          <h3>Information</h3>
           <ul className={classes.list}>
             <li>About Us</li>
             <li>About Us</li>
