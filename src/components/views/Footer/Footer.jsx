@@ -47,7 +47,7 @@ export const Footer = (props) => {
         </div>
         <div className={classes.footer_box_discover_menu}>
           <h3>Discover</h3>
-          <ul>
+          <ul className={classes.list}>
             <li>About Us</li>
             <li>About Us</li>
             <li>About Us</li>
@@ -56,6 +56,21 @@ export const Footer = (props) => {
         </div>
         <div className={classes.footer_box_help}>
           <h3>Help Center</h3>
+          <ul className={classes.list}>
+            <li>About Us</li>
+            <li>About Us</li>
+            <li>About Us</li>
+            <li>About Us</li>
+          </ul>
+        </div>
+        <div className={classes.footer_box_help}>
+          <h3>Career</h3>
+          <ul className={classes.list}>
+            <li>About Us</li>
+            <li>About Us</li>
+            <li>About Us</li>
+            <li>About Us</li>
+          </ul>
         </div>
         <div className={classes.subcribe}>
             <h3>Subcribe</h3>
@@ -64,7 +79,7 @@ export const Footer = (props) => {
           <RiSendPlaneFill className={classes.subcribe_box_send} />
         </div>
         <div className={classes.subcribe_box_info}>
-            <p> Plaese Subcribe For Daily News And Update.</p>
+            <p>  Subcribe For Hot Deals And Update.</p>
         </div>
         </div>
       </div>

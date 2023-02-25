@@ -5,6 +5,7 @@ import Navbar from "./components/views/Navbar/Navbar";
 import Hero from './components/views/Hero/Hero'
 import "./index.css";
 import Footer from "./components/views/Footer/Footer";
+import Category from "./components/views/Category/Category";
 // import HomePage from "./components/views/HomePage/HomePage";
 // import LoginPage from 'LoginPageMFE/LoginPage'
 const App = () => (
@@ -12,6 +13,7 @@ const App = () => (
     <Header />
     <Navbar />
    <Hero/>
+   <Category/>
    <Footer/>
    {/* <HomePage/> */}
    {/* <LoginPage/> */}

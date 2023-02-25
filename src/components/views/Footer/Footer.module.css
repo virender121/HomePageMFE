@@ -7,11 +7,14 @@
     width: 80%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1.3fr repeat(2,1fr) 3fr;
+    grid-template-columns: 1.3fr repeat(3,1fr) 4fr;
     align-items: flex-start;
     justify-content: space-between;
     gap: 3rem;
 
+}
+.list{
+    list-style-type: none;
 }
 .footer_social{
     display: flex;
@@ -31,7 +34,7 @@
     box-shadow: .2rem;
 }
 .subcribe_box{
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;

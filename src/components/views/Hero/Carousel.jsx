@@ -60,7 +60,7 @@ const Carousele = () => {
             height="42.5rem"
             captionStyle={captionStyle}
             radius="10px"
-            slideNumber={true}
+            slideNumber={false}
             slideNumberStyle={slideNumberStyle}
             captionPosition="bottom"
             automatic={true}
