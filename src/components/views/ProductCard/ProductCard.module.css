@@ -1,11 +1,16 @@
 .container {
-  background-color: gray;
+  background-color: #BCE3C9;
   border-radius: var(--bd-radius);
   overflow: hidden;
   padding: 1.25rem;
   width: fit-content;
+  
 }
 
 .container > * {
   max-width: 16.25rem;
+}
+.productimg{
+  width: 10rem;
+  border-radius: 1rem;
 }

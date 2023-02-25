@@ -15,7 +15,7 @@ export const ProductCard = (props) => {
   const { productImage, vendor, productName, productPrice} = props;
   return (
     <div className={classes.container}>
-      <img src={productImage} />
+      <img src={productImage} className={classes.productimg}/>
       <Text variant="text-sm">{vendor}</Text>
       <Text variant="heading-sm">{productName}</Text>
       <Text>{productPrice}</Text>
