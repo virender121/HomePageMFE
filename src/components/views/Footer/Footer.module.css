@@ -2,6 +2,7 @@
     width: 100%;
     padding-block: 1.5rem;
     position: relative;
+    border-top: 3px solid black;
 }
 .footer_box{
     width: 80%;
@@ -12,6 +13,9 @@
     justify-content: space-between;
     gap: 3rem;
 
+}
+.icons{
+    color: #5B9D34;
 }
 .list{
     list-style-type: none;

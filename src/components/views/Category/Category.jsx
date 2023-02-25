@@ -1,8 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { BsCircleFill } from "react-icons/bs";
 import classes from "./Category.module.css";
-import Text from "../Text/Text";
 
 /**
  * Impliments categery component
@@ -27,12 +25,7 @@ export const Categery = (props) => {
               height={150}
               objectFit="cover"
             />
-
             <div className={classes.category_box_title}>
-              {/* <span>
-                <BsCircleFill />
-              </span> */}
-
               <div className={classes.category_box_title_info}>
                 <h4>Vegetable</h4>
               </div>

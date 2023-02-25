@@ -6,6 +6,8 @@ import { TiSocialTumbler } from "react-icons/ti";
 import { TiSocialYoutube } from "react-icons/ti";
 import { TiSocialInstagram } from "react-icons/ti";
 import { RiSendPlaneFill } from "react-icons/ri";
+import {GoLocation} from 'react-icons/go'
+import {TfiHeadphoneAlt} from 'react-icons/tfi'
 import classes from "./Footer.module.css";
 
 /**
@@ -23,25 +25,25 @@ export const Footer = (props) => {
         <div className={classes.footer_box_social}>
           <img src="" alt="logo" height={100} width={100} />
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            pariatur quo minus praesentium illum. Eligendi fugiat iusto tempore
-            inventore animi!
+          <GoLocation className={classes.icons}/> Address : Xyz Street <br/>
+          <TfiHeadphoneAlt className={classes.icons}/> Call Us : (+91) - 1234 456 789<br/>
+          <RiSendPlaneFill className={classes.icons}/> Email : contact@nest.com
           </p>
           <div className={classes.footer_social}>
             <a href="#">
-              <TiSocialFacebookCircular />
+              <TiSocialFacebookCircular className={classes.icons} />
             </a>
             <a href="#">
-              <TiSocialLinkedin />
+              <TiSocialLinkedin className={classes.icons} />
             </a>
             <a href="#">
-              <TiSocialTumbler />
+              <TiSocialTumbler className={classes.icons} />
             </a>
             <a href="#">
-              <TiSocialYoutube />
+              <TiSocialYoutube  className={classes.icons}/>
             </a>
             <a href="#">
-              <TiSocialInstagram />
+              <TiSocialInstagram  className={classes.icons}/>
             </a>
           </div>
         </div>
@@ -49,27 +51,27 @@ export const Footer = (props) => {
           <h3>Company</h3>
           <ul className={classes.list}>
             <li>About Us</li>
-            <li>About Us</li>
-            <li>About Us</li>
-            <li>About Us</li>
+            <li>Delivery Information</li>
+            <li>Privacy Policy</li>
+            <li>Contact Us</li>
           </ul>
         </div>
         <div className={classes.footer_box_help}>
           <h3>Account</h3>
           <ul className={classes.list}>
-            <li>About Us</li>
-            <li>About Us</li>
-            <li>About Us</li>
-            <li>About Us</li>
+            <li>Sign In</li>
+            <li>View Cart</li>
+            <li>Help Ticket</li>
+            <li>Shipping Deatails</li>
           </ul>
         </div>
         <div className={classes.footer_box_help}>
           <h3>Information</h3>
           <ul className={classes.list}>
-            <li>About Us</li>
-            <li>About Us</li>
-            <li>About Us</li>
-            <li>About Us</li>
+            <li>Store Location</li>
+            <li>Help & FAQ's</li>
+            <li>Order & Returns</li>
+            <li>Feedback For us.</li>
           </ul>
         </div>
         <div className={classes.subcribe}>

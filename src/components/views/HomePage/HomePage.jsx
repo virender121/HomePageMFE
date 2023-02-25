@@ -4,7 +4,6 @@ import PropTypes from 'prop-types'
 import classes from './HomePage.module.css';
 import ProductCard from 'HomePageMFE/ProductCard';
 import Hero from '../Hero/Hero';
-import Vertical from '../Vertical/Vertical';
 import { productData } from '../../../Constdata/mockdata'
 
 
@@ -22,14 +21,9 @@ export const HomePage = (props) => {
 
         <div className={classes.container}>
             {productData.map((x) => {
-                return (<Vertical> <ProductCard  {...x} /> </Vertical>)
+                return ( <ProductCard  {...x} /> )
             }
-
-
-
             )}
-
-            <Hero />
         </div>
     )
 }
