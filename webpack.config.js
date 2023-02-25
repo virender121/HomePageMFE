@@ -48,6 +48,7 @@ module.exports = {
         LoginPageMFE : 'LoginPageMFE@http://localhost:3002/remoteEntry.js',
         CheckoutPageMFE : 'CheckoutPageMFE@http://localhost:3003/remoteEntry.js',
         ProductPageMFE : 'ProductPageMFE@http://localhost:3004/remoteEntry.js',
+        HomePageMFE: 'HomePageMFE@http://localhost:3001/remoteEntry.js',
       },
       exposes: {
         './ProductCard': './src/components/views/ProductCard/ProductCard.jsx',
