@@ -1,8 +1,10 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const dotenv = require('dotenv')
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
-
+const Dotenv = require('dotenv-webpack');
+dotenv.config()
 const deps = require("./package.json").dependencies;
-module.exports = {
+module.exports = (env) => ({
   output: {
     publicPath: "http://localhost:3001/",
   },
@@ -40,15 +42,16 @@ module.exports = {
     ],
   },
 
-  plugins: [
+
+  plugins: [ new Dotenv(),
     new ModuleFederationPlugin({
       name: "HomePageMFE",
       filename: "remoteEntry.js",
       remotes: {
-        LoginPageMFE : 'LoginPageMFE@http://localhost:3002/remoteEntry.js',
-        CheckoutPageMFE : 'CheckoutPageMFE@http://localhost:3003/remoteEntry.js',
-        ProductPageMFE : 'ProductPageMFE@http://localhost:3004/remoteEntry.js',
-        HomePageMFE: 'HomePageMFE@http://localhost:3001/remoteEntry.js',
+        LoginPageMFE : `LoginPageMFE@${process.env.LoginPageMFE}http://localhost:3002/remoteEntry.js`,
+        CheckoutPageMFE : `CheckoutPageMFE${process.env.CheckoutPageMFE}@http://localhost:3003/remoteEntry.js`,
+        ProductPageMFE : `ProductPageMFE${process.env.ProductPageMFE}@http://localhost:3004/remoteEntry.js`,
+        HomePageMFE: `HomePageMFE${process.env.HomePageMFE}@http://localhost:3001/remoteEntry.js`,
       },
       exposes: {
         './ProductCard': './src/components/views/ProductCard/ProductCard.jsx',
@@ -72,4 +75,4 @@ module.exports = {
       template: "./src/index.html",
     }),
   ],
-};
+});
