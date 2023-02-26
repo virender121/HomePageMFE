@@ -1,8 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-
 import classes from "./ProductCard.module.css";
 import { Text } from "../Text/Text";
+import { GiConsoleController } from "react-icons/gi";
+
+
 /**
  * Impliments ProductCard component
  *
@@ -13,12 +15,13 @@ import { Text } from "../Text/Text";
 
 export const ProductCard = (props) => {
   const { productImage, vendor, productName, productPrice} = props;
+
   return (
     <div className={classes.container}>
       <img src={productImage} className={classes.productimg}/>
       <Text variant="text-sm">{vendor}</Text>
-      <Text variant="heading-sm">{productName}</Text>
-      <Text>{productPrice}</Text>
+      <Text variant="text-sm">{productName}</Text>
+     <p>{productPrice}</p> 
     </div>
   );
 };

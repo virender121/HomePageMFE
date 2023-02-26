@@ -27,7 +27,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 }));
 
 export const Header = (props) => {
-  const [count,setCount]=useState(0)
+  // const [count,setCount]=useState(0)
   return (
     <div className={classes.container}>
       <div className={classes.searchBar_div}>
@@ -38,8 +38,8 @@ export const Header = (props) => {
 
        <BsCart3 style={{fontSize:'30px'}} /> <Text variant="text-sm">Cart</Text>
         <IconButton aria-label="cart">
-        <StyledBadge badgeContent={count} color="secondary">
-        <ShoppingCartIcon onClick={(e)=>setCount(count+1)}/>
+        <StyledBadge badgeContent={2} color="secondary">
+        <ShoppingCartIcon />
         </StyledBadge>
     </IconButton>
         </div>

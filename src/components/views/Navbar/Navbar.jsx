@@ -6,6 +6,8 @@ import { MdOutlineRestaurantMenu } from "react-icons/md";
 import Text from "../Text/Text";
 import { SlFire } from "react-icons/sl";
 import {TfiHeadphoneAlt} from 'react-icons/tfi'
+import {Logo} from '../../../assets/Assets/Nest.png'
+
 /**
  * Impliments Navbar component
  *
@@ -15,13 +17,23 @@ import {TfiHeadphoneAlt} from 'react-icons/tfi'
  */
 
 export const Navbar = (props) => {
+  const {filterItem,menuList}=props
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src="https://icons8.com/icon/Yg6kCIazaGRt/shopping-mall" alt="app__logo" />
+        <img src='' alt="app__logo" />
         
       </div>
-      <ul className="app__navbar-links">
+
+     {
+            menuList?.map((curElem)=>{
+              console.log(menuList)
+                return (
+                  <ul className="app__navbar-links"> <button className='btn-group__item' onClick={()=>filterItem(curElem)}>{curElem}</button></ul>
+                )
+            })
+        }
+      {/* <ul className="app__navbar-links">
         <SlFire className="fire"></SlFire> 
         <li className="p__opensans">
           <Text variant="text-sm"> Hot Deals</Text>
@@ -48,14 +60,14 @@ export const Navbar = (props) => {
         <li className="p__opensans">
           <Text variant="text-sm">Bakery</Text>
         </li>
-      </ul>
-      <div className="app__navbar-login">
+      </ul> */}
+      {/* <div className="app__navbar-login">
         <Text variant="text-sm">Log In / Registration</Text>
         <div />
       </div>
       <TfiHeadphoneAlt className="contact"></TfiHeadphoneAlt>
       <Text variant="text-sm">1800 213 321</Text>
-      <Text variant='text-xs'>24/7 Customer Support</Text>
+      <Text variant='text-xs'>24/7 Customer Support</Text> */}
     </nav>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import Resturant from '../../../Category';
 import classes from './HomePage.module.css';
 import ProductCard from 'HomePageMFE/ProductCard';
 import Hero from '../Hero/Hero';
@@ -20,10 +20,7 @@ export const HomePage = (props) => {
     return (
 
         <div className={classes.container}>
-            {productData.map((x) => {
-                return ( <ProductCard  {...x} /> )
-            }
-            )}
+            <Resturant/>
         </div>
     )
 }
