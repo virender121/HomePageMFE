@@ -6,7 +6,7 @@ import { MdOutlineRestaurantMenu } from "react-icons/md";
 import Text from "../Text/Text";
 import { SlFire } from "react-icons/sl";
 import {TfiHeadphoneAlt} from 'react-icons/tfi'
-import {Logo} from '../../../assets/Assets/Nest.png'
+
 
 /**
  * Impliments Navbar component
