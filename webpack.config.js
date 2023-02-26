@@ -53,7 +53,8 @@ module.exports = {
       exposes: {
         './ProductCard': './src/components/views/ProductCard/ProductCard.jsx',
         './Hero': './src/components/views/Hero/Hero.jsx',
-        './Footer':'./src/components/views/Footer/Footer.jsx'
+        './Footer':'./src/components/views/Footer/Footer.jsx',
+        './HomePage':'.src/componets/views/HomePage/Homepage.jsx'
       },
       shared: {
         ...deps,

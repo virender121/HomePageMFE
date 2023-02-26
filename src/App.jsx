@@ -7,7 +7,8 @@ import "./index.css";
 import Footer from "./components/views/Footer/Footer";
 import HomePage from "./components/views/HomePage/HomePage";
 import { RecoilRoot } from "recoil";
-import MenuCard from "./components/views/ProductCard/MenuCard";
+import LoginPage from 'LoginPageMFE/LoginPage'
+import RegisterPage from 'LoginPageMFE/RegisterPage'
 
 // import HomePage from "./components/views/HomePage/HomePage";
 // import LoginPage from 'LoginPageMFE/LoginPage'
@@ -17,6 +18,8 @@ const App = () => (
       <Navbar />
       <Hero />
       <HomePage />
+      <LoginPage/>
+      <RegisterPage/>
       <Footer />
       {/* <Navbar/> */}
       {/* <Resturant/> */}
