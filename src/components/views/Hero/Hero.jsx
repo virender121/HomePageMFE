@@ -1,8 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Text from '../Text/Text';
-import classes from './Hero.module.css';
+import PropTypes from 'prop-types';
+import React from 'react';
 import Carousele from './Carousel';
+import classes from './Hero.module.css';
 
 
 

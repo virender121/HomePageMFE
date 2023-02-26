@@ -1,10 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import React from 'react';
 import Resturant from '../../../Category';
 import classes from './HomePage.module.css';
-import ProductCard from 'HomePageMFE/ProductCard';
-import Hero from '../Hero/Hero';
-import { productData } from '../../../Constdata/mockdata'
 
 
 /**
