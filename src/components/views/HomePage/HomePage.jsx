@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Resturant from '../../../Category';
 import classes from './HomePage.module.css';
-
+import useMfeStore from 'LoginPageMFE/useMfeStore'
 
 /**
  * Impliments HomePage component
@@ -13,11 +13,14 @@ import classes from './HomePage.module.css';
  */
 
 export const HomePage = (props) => {
-
+    const login = useMfeStore(state => state.loginUser)
+    login({
+        name :'Kuldeep Dhaka'
+    })
     return (
 
         <div className={classes.container}>
-            <Resturant/>
+            <Resturant />
         </div>
     )
 }

@@ -1,14 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Header from "./components/views/Header/Header";
-import Navbar from "./components/views/Navbar/Navbar";
-import Hero from "./components/views/Hero/Hero";
-import "./index.css";
 import Footer from "./components/views/Footer/Footer";
+import Header from "./components/views/Header/Header";
+import Hero from "./components/views/Hero/Hero";
 import HomePage from "./components/views/HomePage/HomePage";
-import { RecoilRoot } from "recoil";
-import LoginPage from 'LoginPageMFE/LoginPage'
-import RegisterPage from 'LoginPageMFE/RegisterPage'
+import Navbar from "./components/views/Navbar/Navbar";
+import "./index.css";
 
 // import HomePage from "./components/views/HomePage/HomePage";
 // import LoginPage from 'LoginPageMFE/LoginPage'
@@ -18,8 +15,8 @@ const App = () => (
       <Navbar />
       <Hero />
       <HomePage />
-      <LoginPage/>
-      <RegisterPage/>
+      {/* <LoginPage/> */}
+      {/* <RegisterPage/> */}
       <Footer />
       {/* <Navbar/> */}
       {/* <Resturant/> */}
