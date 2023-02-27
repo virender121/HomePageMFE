@@ -6,6 +6,7 @@ import Hero from "./components/views/Hero/Hero";
 import HomePage from "./components/views/HomePage/HomePage";
 import LoginPage from 'LoginPageMFE/LoginPage'
 import RegisterPage from 'LoginPageMFE/RegisterPage'
+import Navbar from "./Navbar";
 // import HomePage from "./components/views/HomePage/HomePage";
 // import LoginPage from 'LoginPageMFE/LoginPage'
 const App = () => (
