@@ -1,7 +1,7 @@
 import React from "react";
 import './Global.css'
 
-const MenuCard = ({ menuData }) => {
+const BuyCard = ({ menuData }) => {
   console.log(menuData);
   return (
     <>
@@ -32,4 +32,4 @@ const MenuCard = ({ menuData }) => {
   );
 };
 
-export default MenuCard;
+export default BuyCard;

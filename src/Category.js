@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Menu from './Constdata/menuApi'
-import MenuCard from './components/views/ProductCard/MenuCard'
+import BuyCard from './components/views/ProductCard/BuyCard'
 import Navbar from './Navbar'
 
 const uniqueList =  [...new Set(Menu.map((curElem)=>{
@@ -27,7 +27,7 @@ const uniqueList =  [...new Set(Menu.map((curElem)=>{
   return (
     <>
       <Navbar filterItem={filterItem} menuList={menuList}/>
-      <MenuCard menuData={menuData}/>
+      <BuyCard menuData={menuData}/>
     </>
   )
 }
