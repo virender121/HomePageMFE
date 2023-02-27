@@ -53,13 +53,14 @@ module.exports = (env) => ({
         LoginPageMFE : `LoginPageMFE@${process.env.LoginPageMFE}remoteEntry.js`,
         CheckoutPageMFE : `CheckoutPageMFE@${process.env.CheckoutPageMFE}remoteEntry.js`,
         ProductPageMFE : `ProductPageMFE@${process.env.ProductPageMFE}remoteEntry.js`,
-        // HomePageMFE: `HomePageMFE${process.env.HomePageMFE}@http://localhost:3001/remoteEntry.js`,
+        HomePageMFE: `HomePageMFE${process.env.HomePageMFE}@http://localhost:3001/remoteEntry.js`,
       },
       exposes: {
         './ProductCard': './src/components/views/ProductCard/ProductCard.jsx',
         './Hero': './src/components/views/Hero/Hero.jsx',
         './Footer':'./src/components/views/Footer/Footer.jsx',
-        './HomePage':'./src/components/views/HomePage/HomePage.jsx'
+        './Navbar':'./src/components/views/Navbar/Navbar.jsx',
+        './Header':'./src/components/views/Header/Header.jsx'
       },
       shared: {
         ...deps,

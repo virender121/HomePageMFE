@@ -15,7 +15,7 @@ export const Navbar = (props) => {
   return (
     <>
       <nav className={styles.navbar}>
-        <div className={styles.brand}><FaShopify style={{fontSize: "30px", color:'#3BB77E',marginRight:'18rem'}}>Nest</FaShopify></div>
+        <div className={styles.brand}><FaShopify style={{fontSize: "30px", color:'#3BB77E',marginRight:'18rem'}}></FaShopify>Nest</div>
         <ul className={styles.navbarNav}>
           <li className={styles.navItem}>
             <NavLink
