@@ -3,12 +3,12 @@ import './Navbar.css'
 const Navbar = ({filterItem,menuList}) => {
   return (
     <>
-         <nav className='navbar'>
+    <nav className='navbar'>
     <div className='btn-group'>
         {
-            menuList?.map((curElem)=>{
+            menuList?.map((curElem,i)=>{
                 return (
-                    <button className='btn-group__item' onClick={()=>filterItem(curElem)}>{curElem}</button>
+                    <button className='btn-group__item' onClick={()=>filterItem(curElem)} key={i}>{curElem}</button>
                 )
             })
         }

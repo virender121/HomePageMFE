@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import MyInput from "../MyInput/MyInput.jsx";
 import classes from "./Header.module.css";
@@ -6,11 +6,11 @@ import { BsCart3 } from "react-icons/bs";
 import { BsHeart } from "react-icons/bs";
 import { VscAccount } from "react-icons/vsc";
 import Text from "../Text/Text.jsx";
-import { IconButton } from "@mui/material";
 import Badge from "@mui/material/Badge";
 import { styled } from "@mui/material/styles";
 import {FaShopify} from 'react-icons/fa'
-
+import { useRecoilValue } from "recoil";
+import { cartValueAtom } from "../../../Recoil.js";
 /**
  * Impliments Header component
  *
@@ -28,24 +28,28 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 }));
 
 export const Header = (props) => {
-  // const [count,setCount]=useState(0)
+
+   const cart = useRecoilValue(cartValueAtom)
+  // const [count,setCount]=useState(cartValue.length)
+  // // let abc = cartValue.length
+  // useEffect(() => {
+  //  setCount(cartValue.length)
+  // },[count])
+  // console.log('harsh',cartValue)
   return (
     <div className={classes.container}>
-      <FaShopify style={{fontSize: "30px", color:'#3BB77E',marginRight:'18rem'}}>Nest</FaShopify>
+      <FaShopify style={{fontSize: "30px", color:'#3BB77E',marginRight:'18rem'}}></FaShopify>
       <div className={classes.searchBar_div}>
         <MyInput placeholder="Search for item" className={classes.input} />
         <div className={classes.icons}>
-          {" "}
           <VscAccount style={{ fontSize: "30px", color:'#3BB77E' }} />
           <Text  variant="text-sm">Account</Text>
           <BsHeart style={{ fontSize: "30px", color:'#3BB77E' }} />
           <Text variant="text-sm">Like</Text>
-          <BsCart3 style={{ fontSize: "30px", color:'#3BB77E' }}/><StyledBadge badgeContent={2} color="secondary"></StyledBadge>
+          <BsCart3 style={{ fontSize: "30px", color:'#3BB77E' }}/><StyledBadge badgeContent={cart} color="secondary"></StyledBadge>
           <Text variant="text-sm">Cart</Text>
         </div>
       </div>
-
-      <image src="" />
     </div>
   );
 };
