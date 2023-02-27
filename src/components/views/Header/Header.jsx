@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import MyInput from "../MyInput/MyInput.jsx";
 import classes from "./Header.module.css";
@@ -7,9 +7,10 @@ import { BsHeart } from "react-icons/bs";
 import { VscAccount } from "react-icons/vsc";
 import Text from "../Text/Text.jsx";
 import { IconButton } from "@mui/material";
-import Badge from '@mui/material/Badge';
-import { styled } from '@mui/material/styles';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import Badge from "@mui/material/Badge";
+import { styled } from "@mui/material/styles";
+import {FaShopify} from 'react-icons/fa'
+
 /**
  * Impliments Header component
  *
@@ -18,11 +19,11 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
  * @returns Header
  */
 const StyledBadge = styled(Badge)(({ theme }) => ({
-  '& .MuiBadge-badge': {
+  "& .MuiBadge-badge": {
     right: -3,
     top: 13,
     border: `2px solid ${theme.palette.background.paper}`,
-    padding: '0 4px',
+    padding: "0 4px",
   },
 }));
 
@@ -30,21 +31,19 @@ export const Header = (props) => {
   // const [count,setCount]=useState(0)
   return (
     <div className={classes.container}>
+      <FaShopify style={{fontSize: "30px", color:'#3BB77E',marginRight:'18rem'}}>Nest</FaShopify>
       <div className={classes.searchBar_div}>
         <MyInput placeholder="Search for item" className={classes.input} />
-       <div className={classes.icons}> <VscAccount style={{fontSize:'30px'}} />  <Text variant="text-sm">Account</Text>
-        <BsHeart style={{fontSize:'30px'}} />  <Text variant="text-sm">Like</Text>
-
-
-       <BsCart3 style={{fontSize:'30px'}} /> <Text variant="text-sm">Cart</Text>
-        <IconButton aria-label="cart">
-        <StyledBadge badgeContent={2} color="secondary">
-        <ShoppingCartIcon />
-        </StyledBadge>
-    </IconButton>
+        <div className={classes.icons}>
+          {" "}
+          <VscAccount style={{ fontSize: "30px", color:'#3BB77E' }} />
+          <Text  variant="text-sm">Account</Text>
+          <BsHeart style={{ fontSize: "30px", color:'#3BB77E' }} />
+          <Text variant="text-sm">Like</Text>
+          <BsCart3 style={{ fontSize: "30px", color:'#3BB77E' }}/><StyledBadge badgeContent={2} color="secondary"></StyledBadge>
+          <Text variant="text-sm">Cart</Text>
         </div>
       </div>
-    
 
       <image src="" />
     </div>

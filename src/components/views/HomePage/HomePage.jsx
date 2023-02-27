@@ -1,9 +1,12 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import Resturant from '../../../Category';
+import Category from '../../../Category';
 import classes from './HomePage.module.css';
 import useMfeStore from 'LoginPageMFE/useMfeStore'
-
+import Header from '../Header/Header';
+import Hero from '../Hero/Hero';
+import Footer from '../Footer/Footer';
+import Navbar from '../Navbar/Navbar'
 /**
  * Impliments HomePage component
  * 
@@ -20,7 +23,11 @@ export const HomePage = (props) => {
     return (
 
         <div className={classes.container}>
-            <Resturant />
+            <Navbar/>
+            <Header/>
+            <Hero/>
+            <Category />
+            <Footer/>
         </div>
     )
 }

@@ -7,6 +7,9 @@
   height: 6.06rem;
 
 }
+.text{
+  color:#3BB77E ;
+}
 .searchBar_div {
   display: flex;
  justify-content: space-around;

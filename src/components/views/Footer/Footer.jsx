@@ -8,6 +8,7 @@ import { TiSocialInstagram } from "react-icons/ti";
 import { RiSendPlaneFill } from "react-icons/ri";
 import {GoLocation} from 'react-icons/go'
 import {TfiHeadphoneAlt} from 'react-icons/tfi'
+import {FaShopify} from 'react-icons/fa'
 import classes from "./Footer.module.css";
 
 /**
@@ -23,7 +24,7 @@ export const Footer = (props) => {
     <div className={classes.footer}>
       <div className={classes.footer_box}>
         <div className={classes.footer_box_social}>
-          <img src="" alt="logo" height={100} width={100} />
+        <FaShopify style={{fontSize: "30px", color:'#3BB77E',marginRight:'18rem'}}>Nest</FaShopify>
           <p>
           <GoLocation className={classes.icons}/> Address : Xyz Street <br/>
           <TfiHeadphoneAlt className={classes.icons}/> Call Us : (+91) - 1234 456 789<br/>

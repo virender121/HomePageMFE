@@ -1,24 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Footer from "./components/views/Footer/Footer";
-import Header from "./components/views/Header/Header";
-import Hero from "./components/views/Hero/Hero";
 import HomePage from "./components/views/HomePage/HomePage";
-import LoginPage from 'LoginPageMFE/LoginPage'
-import RegisterPage from 'LoginPageMFE/RegisterPage'
-import Navbar from "./Navbar";
+import LoginPage from "LoginPageMFE/LoginPage";
+import RegisterPage from "LoginPageMFE/RegisterPage";
+import { BrowserRouter } from "react-router-dom";
 // import HomePage from "./components/views/HomePage/HomePage";
 // import LoginPage from 'LoginPageMFE/LoginPage'
 const App = () => (
-    <>
-      <Header />
-      <Navbar />
-      <Hero />
+  <>
+    <BrowserRouter>
       <HomePage />
-      {/* <LoginPage/> */}
-      {/* <RegisterPage/> */}
-      <Footer />
-    </>
-    
+    </BrowserRouter>
+  </>
 );
 ReactDOM.render(<App />, document.getElementById("app"));
