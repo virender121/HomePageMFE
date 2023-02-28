@@ -37,16 +37,15 @@ To install this project npx create-mf-app,  and run yarn  to install the depende
 Usage
 To start the project,
 need to download All the MFE 
-1] HomePageMFE : github-link : https://github.com/Bhavishm009/HomePageMFE.git , port : 3001
-2] LoginPageMFE  github-link : https://github.com/Piyushshind/LoginPageMFE.git , port : 3002
-3] ProductPageMFE github-link : https://github.com/komalsc/ProductPageMFE.git , port : 3003
-4] CheckoutMFE github-link : https://github.com/virender121/CheckkoutMFE.git , port : 3004
+1] HomePageMFE : github-link : https://github.com/Bhavishm009/HomePageMFE.git  || Port : 3001
+2] LoginPageMFE  github-link : https://github.com/Piyushshind/LoginPageMFE.git || Port : 3002
+3] ProductPageMFE github-link : https://github.com/komalsc/ProductPageMFE.git  || Port : 3003
+4] CheckoutMFE github-link : https://github.com/virender121/CheckkoutMFE.git   || Port : 3004
 
 run yarn start. This will start the development server and open the project in your default browser.
 
 yarn start
-The project consists of a single page that displays a welcome message and a list of users. 
-You can customize this page by editing the App.js file.
+
 
 Configuration
 This project uses Webpack Module Federation to enable integration with other microfrontends.
@@ -56,7 +55,6 @@ Deployment
 To deploy the project, run yarn run build to create a production-ready build. 
 You can then deploy the files in the build directory to your server.
 
-Copy code
 yarn build
 
 
