@@ -59,7 +59,8 @@ module.exports = (env) => ({
         './ProductCard': './src/components/views/ProductCard/ProductCard.jsx',
         './Hero': './src/components/views/Hero/Hero.jsx',
         './Footer':'./src/components/views/Footer/Footer.jsx',
-        './HomePage':'./src/components/views/HomePage/HomePage.jsx'
+        './HomePage':'./src/components/views/HomePage/HomePage.jsx',
+        // './Navbar': './src/components/views/Navbar/Navbar.jsx'
       },
       shared: {
         ...deps,
