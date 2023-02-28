@@ -17,7 +17,7 @@ const BuyCard = ({ menuData }) => {
   const setValues = useSetRecoilState(cartValueAtom);
  
   const cartValue = JSON.parse(localStorage.getItem("Cart"));
-  let Length = cartValue.length;
+  let Length = cartValue?.length;
   function handleShop(id) {
     const Cart = menuData?.filter((item, i) => i == id);
     setCartItem([...cartItem, ...Cart]);
@@ -33,12 +33,8 @@ const BuyCard = ({ menuData }) => {
             <div className="card-container" key={id}>
               <div className="card">
                 <div className="card-body">
-                  {/* <span className="card-number card-circle subtle">{id}</span> */}
                   <span className="card-author subtle">{category}</span>
                   <h2 className="card-title">{name}</h2>
-                  {/* <span className="card-description subtle">
-                {description}
-                </span> */}
                   <img src={image} alt="Dosa" className="card-media" />
                   <button
                     className="card-tag subtle"

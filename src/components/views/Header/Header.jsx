@@ -30,12 +30,6 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 export const Header = (props) => {
 
    const cart = useRecoilValue(cartValueAtom)
-  // const [count,setCount]=useState(cartValue.length)
-  // // let abc = cartValue.length
-  // useEffect(() => {
-  //  setCount(cartValue.length)
-  // },[count])
-  // console.log('harsh',cartValue)
   return (
     <div className={classes.container}>
       <FaShopify style={{fontSize: "30px", color:'#3BB77E',marginRight:'18rem'}}></FaShopify>

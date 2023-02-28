@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import React from "react";
-import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import {FaShopify} from 'react-icons/fa'
 /**
@@ -15,37 +14,7 @@ export const Navbar = (props) => {
   return (
     <>
       <nav className={styles.navbar}>
-        <div className={styles.brand}><FaShopify style={{fontSize: "30px", color:'#3BB77E',marginRight:'18rem'}}></FaShopify>Nest</div>
-        <ul className={styles.navbarNav}>
-          <li className={styles.navItem}>
-            <NavLink
-              className={styles.navLink}
-              activeClassName={styles.activeNavLink}
-              exact
-              to="/"
-            >
-              Home
-            </NavLink>
-          </li>
-          <li className={styles.navItem}>
-            <NavLink
-              className={styles.navLink}
-              activeClassName={styles.activeNavLink}
-              to="/login"
-            >
-              Login
-            </NavLink>
-          </li>
-          <li className={styles.navItem}>
-            <NavLink
-              className={styles.navLink}
-              activeClassName={styles.activeNavLink}
-              to="/signIn"
-            >
-              Register
-            </NavLink>
-          </li>
-        </ul>
+        <div className={styles.brand}><FaShopify style={{fontSize: "30px", color:'#3BB77E',marginRight:'18rem'}}></FaShopify></div>
       </nav>
     </>
   );
