@@ -1,17 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import HomePage from "./components/views/HomePage/HomePage";
-import LoginPage from "LoginPageMFE/LoginPage";
 import RegisterPage from "LoginPageMFE/RegisterPage";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { RecoilRoot } from "recoil";
-// import HomePage from "./components/views/HomePage/HomePage";
-// import LoginPage from 'LoginPageMFE/LoginPage'
+import LoginPage from 'LoginPageMFE/LoginPage'
 const App = () => (
   <>
    
       <BrowserRouter>
-        <HomePage />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/Login' element={<LoginPage/>}/>
+        <Route path='/RegisterPage' element={<RegisterPage/>}/>
+       
+        </Routes>
       </BrowserRouter>
   
   </>

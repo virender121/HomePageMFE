@@ -53,7 +53,6 @@ module.exports = (env) => ({
         LoginPageMFE : `LoginPageMFE@${process.env.LoginPageMFE}remoteEntry.js`,
         CheckoutPageMFE : `CheckoutPageMFE@${process.env.CheckoutPageMFE}remoteEntry.js`,
         ProductPageMFE : `ProductPageMFE@${process.env.ProductPageMFE}remoteEntry.js`,
-        HomePageMFE: `HomePageMFE${process.env.HomePageMFE}@http://localhost:3001/remoteEntry.js`,
       },
       exposes: {
         './ProductCard': './src/components/views/ProductCard/ProductCard.jsx',
