@@ -1,16 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import HomePage from "./components/views/HomePage/HomePage";
-import LoginPage from "LoginPageMFE/LoginPage";
 import RegisterPage from "LoginPageMFE/RegisterPage";
-import { BrowserRouter } from "react-router-dom";
-// import HomePage from "./components/views/HomePage/HomePage";
-// import LoginPage from 'LoginPageMFE/LoginPage'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { RecoilRoot } from "recoil";
+import LoginPage from 'LoginPageMFE/LoginPage'
 const App = () => (
   <>
-    <BrowserRouter>
-      <HomePage />
-    </BrowserRouter>
+   
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/Login' element={<LoginPage/>}/>
+        <Route path='/RegisterPage' element={<RegisterPage/>}/>
+       
+        </Routes>
+      </BrowserRouter>
+  
   </>
 );
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render( <RecoilRoot><App /></RecoilRoot>, document.getElementById("app"));

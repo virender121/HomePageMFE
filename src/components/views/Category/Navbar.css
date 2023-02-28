@@ -10,14 +10,14 @@
     text-transform: capitalize;
   } */
   
+  /** button group styles **/
   .btn-group {
     border-radius: 1rem;
     text-transform: capitalize;
-    gap : 2rem;
   }
   .btn-group__item {
     border: none;
-
+    /* min-width: 6rem; */
     padding: 1.5rem 3rem;
     background-color: rgb(255, 255, 255);
     cursor: pointer;

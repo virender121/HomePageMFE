@@ -6,7 +6,8 @@ import useMfeStore from 'LoginPageMFE/useMfeStore'
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
 import Footer from '../Footer/Footer';
-import Navbar from '../Navbar/Navbar'
+import Navbar from '../../../Navbar';
+// import Navbar from 'LoginPageMFE/Navbar'
 /**
  * Impliments HomePage component
  * 
